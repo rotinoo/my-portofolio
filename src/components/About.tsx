@@ -17,7 +17,7 @@ const About = () => {
       </motion.h2>
       <div className="bg-white shadow-md rounded-lg p-6 border-l-4 border-primary-500 flex flex-col md:flex-row items-center">
         <motion.img 
-          src="/images/profile.jpg" 
+          src="https://i.imgur.com/g1E7D46.jpeg" 
           alt="Robby Agustino's Profile Picture" 
           className="w-80 h-80 rounded-full object-cover mb-4 md:mb-0 md:mr-6 border-4 border-primary-300" 
           initial={{ scale: 0 }}
