@@ -26,9 +26,14 @@ const Projects = () => {
           link="#"
         />
         <ProjectCard
+          title="InstantSite"
+          description="A simple application for easy website deployment on local servers. Part of a larger project aimed at simplifying website sharing."
+          link="https://github.com/rotinoo/instant-site"
+        />
+        <ProjectCard
           title="Personal Bio Website"
           description="This Website! A personal website showcasing my skills, experience, and projects in IT, with a focus on cloud computing and web development."
-          link="#"
+          link="https://rotinoo.github.io/my-portofolio/"
         />
         <ProjectCard
           title="Network Configuration Project"
