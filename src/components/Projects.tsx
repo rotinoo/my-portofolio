@@ -26,8 +26,8 @@ const Projects = () => {
           link="#"
         />
         <ProjectCard
-          title="InstantSite"
-          description="A simple application for easy website deployment on local servers. Part of a larger project aimed at simplifying website sharing."
+          title="Instant Site"
+          description="A simple application for easy website deployment on local servers. Part of a larger project that i have been working on."
           link="https://github.com/rotinoo/instant-site"
         />
         <ProjectCard
