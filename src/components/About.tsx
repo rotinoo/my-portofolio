@@ -38,29 +38,7 @@ const About = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 1, duration: 0.5 }}
               >
-                {firstName.split("").map((letter, index) => (
-                  <motion.span
-                    key={index}
-                    className="inline-block mr-0" 
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: 1 + index * 0.1, duration: 0.2 }}
-                  >
-                    {letter}
-                  </motion.span>
-                ))}
-                <span className="inline-block ml-1"> </span>
-                {lastName.split("").map((letter, index) => (
-                  <motion.span
-                    key={index}
-                    className="inline-block mr-0" 
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: 1 + firstName.length * 0.1 + index * 0.1, duration: 0.2 }}
-                  >
-                    {letter}
-                  </motion.span>
-                ))}
+                <h2>Robby Agustino</h2>
               </motion.span>
             </h3>
             <motion.p 
