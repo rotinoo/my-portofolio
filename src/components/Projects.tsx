@@ -27,6 +27,11 @@ const Projects = () => {
           description="Currently in development, this application will enable instant deployment of websites for FTP purposes, allowing clients to access them via a browser without the need for software installation."
         />
         <ProjectCard
+          title="Key Boost"
+          description="A simple application designed to amplify key presses. This app allows you to repeat a specified key multiple times."
+          link="https://github.com/rotinoo/keyboost"
+        />
+        <ProjectCard
           title="Instant Site"
           description="A simple application for easy website deployment on local servers. Part of a larger project that I have been working on."
           link="https://github.com/rotinoo/instant-site"
