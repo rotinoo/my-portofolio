@@ -1,17 +1,19 @@
 import React from 'react'
 import { ExternalLink } from 'lucide-react'
 
-const ProjectCard = ({ title, description, link }: { title: string; description: string; link: string }) => (
+const ProjectCard = ({ title, description, link }: { title: string; description: string; link?: string }) => (
   <div className="bg-white rounded-lg shadow-md overflow-hidden border-t-4 border-primary-500">
     <div className="p-6">
       <h3 className="text-xl font-semibold mb-2 text-primary-700">{title}</h3>
       <p className="text-gray-600 mb-4">{description}</p>
     </div>
-    <div className="bg-primary-50 px-6 py-3">
-      <a href={link} target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:text-primary-800 flex items-center">
-        View Project <ExternalLink size={16} className="ml-1" />
-      </a>
-    </div>
+    {link && (
+      <div className="bg-primary-50 px-6 py-3">
+        <a href={link} target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:text-primary-800 flex items-center">
+          View Project <ExternalLink size={16} className="ml-1" />
+        </a>
+      </div>
+    )}
   </div>
 )
 
@@ -23,11 +25,10 @@ const Projects = () => {
         <ProjectCard
           title="Website Deployment & FTP Tool"
           description="Currently in development, this application will enable instant deployment of websites for FTP purposes, allowing clients to access them via a browser without the need for software installation."
-          link="#"
         />
         <ProjectCard
           title="Instant Site"
-          description="A simple application for easy website deployment on local servers. Part of a larger project that i have been working on."
+          description="A simple application for easy website deployment on local servers. Part of a larger project that I have been working on."
           link="https://github.com/rotinoo/instant-site"
         />
         <ProjectCard
