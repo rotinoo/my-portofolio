@@ -1,10 +1,7 @@
-import React from 'react'
-import { motion } from 'framer-motion'
+import React from 'react';
+import { motion } from 'framer-motion';
 
 const About = () => {
-  const firstName = "Robby"
-  const lastName = "Agustino"
-
   return (
     <section id="about" className="mb-16">
       <motion.h2 
@@ -16,14 +13,18 @@ const About = () => {
         About Me
       </motion.h2>
       <div className="bg-white shadow-md rounded-lg p-6 border-l-4 border-primary-500 flex flex-col md:flex-row items-center">
-        <motion.img 
-          src="https://i.imgur.com/JrXSEfI.jpeg" 
-          alt="Robby Agustino's Profile Picture" 
-          className="w-80 h-80 rounded-full object-cover mb-4 md:mb-0 md:mr-6 border-4 border-primary-300" 
+        <motion.div 
+          className="w-64 h-64 flex-shrink-0 rounded-full overflow-hidden border-4 border-primary-300 mb-4 md:mb-0 md:mr-6"
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
           transition={{ type: "spring", stiffness: 260, damping: 20 }}
-        />
+        >
+          <img 
+            src="https://storage.googleapis.com/rotinoo-public/profile" 
+            alt="Robby Agustino's Profile Picture" 
+            className="w-full h-full object-cover"
+          />
+        </motion.div>
         <div>
           <motion.div
             initial={{ opacity: 0 }}
@@ -38,7 +39,7 @@ const About = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 1, duration: 0.5 }}
               >
-                <h2>Robby Agustino</h2>
+                Robby Agustino
               </motion.span>
             </h3>
             <motion.p 
@@ -47,7 +48,7 @@ const About = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.5, duration: 0.5 }}
             >
-             I'm an aspiring IT Developer with a deep passion for <strong>cloud computing</strong> and <strong>web development</strong>. Currently, I'm pursuing a journey in the <strong>Bangkit 2024 Cloud Computing Path</strong>, where I'm learning to harness the power of cloud infrastructure to build scalable and efficient applications. I enjoy tackling challenges in cloud technology, server management, and application deployment.
+              I'm an aspiring IT Developer with a deep passion for <strong>cloud computing</strong> and <strong>web development</strong>. Currently, I'm pursuing a journey in the <strong>Bangkit 2024 Cloud Computing Path</strong>, where I'm learning to harness the power of cloud infrastructure to build scalable and efficient applications. I enjoy tackling challenges in cloud technology, server management, and application deployment.
             </motion.p>
             <motion.p 
               className="text-primary-700 leading-relaxed text-xl" 
@@ -77,7 +78,7 @@ const About = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default About
+export default About;

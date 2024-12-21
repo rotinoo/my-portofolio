@@ -1,8 +1,11 @@
 import React from 'react'
 import { ExternalLink } from 'lucide-react'
 
-const ProjectCard = ({ title, description, link }: { title: string; description: string; link?: string }) => (
+const ProjectCard = ({ title, description, link, imageSrc }: { title: string; description: string; link?: string; imageSrc?: string }) => (
   <div className="bg-white rounded-lg shadow-md overflow-hidden border-t-4 border-primary-500">
+    {imageSrc && (
+      <img src={imageSrc} alt={title} className="w-full h-32 object-cover" />
+    )}
     <div className="p-6">
       <h3 className="text-xl font-semibold mb-2 text-primary-700">{title}</h3>
       <p className="text-gray-600 mb-4">{description}</p>
@@ -22,6 +25,12 @@ const Projects = () => {
     <section id="projects" className="mb-16">
       <h2 className="text-3xl font-bold mb-4 text-primary-700">Projects</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <ProjectCard
+          title="HairMatch"
+          description="As the project leader, I planned the architecture and developed this hairstyle recommendation system, utilizing machine learning and cloud computing to suggest personalized styles based on facial features and preferences."
+          link="https://github.com/rotinoo/hairmatch"
+          imageSrc="https://storage.googleapis.com/rotinoo-public/hairmatch-1"
+        />
         <ProjectCard
           title="Website Deployment & FTP Tool"
           description="Currently in development, this application will enable instant deployment of websites for FTP purposes, allowing clients to access them via a browser without the need for software installation."
