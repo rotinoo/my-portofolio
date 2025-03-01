@@ -29,7 +29,7 @@ const Projects = () => {
           title="HairMatch"
           description="As the project leader, I planned the architecture and developed this hairstyle recommendation system, utilizing machine learning and cloud computing to suggest personalized styles based on facial features and preferences."
           link="https://github.com/rotinoo/hairmatch"
-          imageSrc="https://storage.googleapis.com/rotinoo-public/hairmatch-1"
+          imageSrc="https://i.imgur.com/QPYl4FD.png"
         />
         <ProjectCard
           title="Website Deployment & FTP Tool"

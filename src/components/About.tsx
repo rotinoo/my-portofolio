@@ -20,7 +20,7 @@ const About = () => {
           transition={{ type: "spring", stiffness: 260, damping: 20 }}
         >
           <img 
-            src="https://storage.googleapis.com/rotinoo-public/profile" 
+            src="https://i.imgur.com/p7oxPQa.jpeg" 
             alt="Robby Agustino's Profile Picture" 
             className="w-full h-full object-cover"
           />
