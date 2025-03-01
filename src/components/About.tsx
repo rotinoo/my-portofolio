@@ -48,7 +48,7 @@ const About = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.5, duration: 0.5 }}
             >
-              I'm an aspiring IT Developer with a deep passion for <strong>cloud computing</strong> and <strong>web development</strong>. Currently, I'm pursuing a journey in the <strong>Bangkit 2024 Cloud Computing Path</strong>, where I'm learning to harness the power of cloud infrastructure to build scalable and efficient applications. I enjoy tackling challenges in cloud technology, server management, and application deployment.
+              I'm an aspiring IT Developer with a deep passion for <strong>cloud computing</strong> and <strong>web development</strong>. I am a <strong>Bangkit 2024 Graduate</strong> from the Cloud Computing Path and an <strong>undergraduate Computer Science student</strong> at Universitas Bunda Mulia. I am passionate about harnessing the power of cloud infrastructure to build scalable and efficient applications.
             </motion.p>
             <motion.p 
               className="text-primary-700 leading-relaxed text-xl" 
@@ -56,7 +56,7 @@ const About = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.8, duration: 0.5 }}
             >
-              Throughout my studies, I've worked on various personal projects, including a <strong>Website Deployment & FTP Tool</strong> that streamlines the process of sharing files and deploying websites without the need for clients to install software. I've also set up <strong>cloud-based server hosting</strong> for multiplayer games, combining my love for technology with my personal interests.
+              Throughout my studies, I've worked on various projects, including a <strong>Website Deployment & FTP Tool</strong> that streamlines the process of sharing files and deploying websites without the need for clients to install software. I've also developed <strong>HairMatch</strong>, a machine learning-based hairstyle recommendation system that helps users find the perfect hairstyle based on their facial features. Additionally, I have set up <strong>cloud-based server hosting</strong> for multiplayer games, combining my love for technology with my personal interests.
             </motion.p>
             <motion.p 
               className="text-primary-700 leading-relaxed text-xl" 
